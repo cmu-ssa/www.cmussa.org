@@ -1,0 +1,54 @@
+---
+import Navigation from "./Navigation.astro";
+---
+
+<header>
+  <div class="header-content">
+    <h1>
+      <span class="main-title">Singapore Students Association</span><br />
+      <span class="subtitle">at Carnegie Mellon University</span>
+    </h1>
+    <nav>
+      <Navigation />
+    </nav>
+  </div>
+</header>
+<style>
+  header {
+    margin: 0;
+    padding-top: 0rem;
+    background-color: rgba(196, 18, 48, 0.85);
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .header-content {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  .main-title {
+    font-family: "EB Garamond", serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+  }
+  .subtitle {
+    font-family: "EB Garamond", serif;
+    font-size: 2rem;
+    font-weight: 450;
+    color: white;
+  }
+  nav {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 350;
+    color: white;
+    text-decoration: none;
+  }
+</style>
