@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="CMU SSA">
 	<main>
-		<h1>Singaporean Students Association<br>
+		<h1><span class="maintitle">Singaporean Students Association</span><br>
 			<span class="subtitle">at Carnegie Mellon University</span></h1>
 		<p>
 			The Carnegie Mellon University Singapore Students Association (CMUSSA) is a 
@@ -19,8 +19,7 @@ import Layout from '../layouts/Layout.astro';
 		
 		<hr>
 
-		<h2>Upcoming Events</h2>
-		<h3>First-Year Webinar</h3>
+		<h2>Upcoming Event: First-Year Webinar</h2>
 		<p>
 			We will be hosting our annual webinar for incoming first-year students to share 
 			more about our experiences at CMU and answer any questions you may have.
@@ -53,31 +52,44 @@ import Layout from '../layouts/Layout.astro';
 		z-index: -1;
 	}
 	h1 {
-		font-size: 3rem;
-		font-weight: 700;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
 	}
-	a {
-		color: darkslateblue;
-		text-decoration: none;
+	.maintitle {
+		font-family: 'Source Serif 4', serif;
+		font-size: 3rem;
+		font-weight: 500;
+		font-variation-settings: 'opsz' 60;
 	}
 	.subtitle {
+		font-family: 'Source Serif 4', serif;
 		font-size: 2rem;
-		font-weight: 650;
+		font-weight: 500;
+		font-variation-settings: 'opsz' 40;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
+	h2 {
+		font-family: 'Source Serif 4', serif;
+		font-size: 1.5rem;
+		font-weight: 500;
+		font-variation-settings: 'opsz' 30;
+		margin-top: 1rem;
 	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
+	h3 {
+		font-family: 'Source Serif 4', serif;
+		font-size: 1.5rem;
+		font-weight: 550;
+		font-variation-settings: 'opsz' 22;
+		margin-top: 1rem;
+	}
+	b {
+		font-weight: 600;
+	}
+	a {
+		color: red;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
 	}
 </style>
