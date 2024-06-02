@@ -1,0 +1,83 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="CMU SSA">
+	<main>
+		<h1>Singaporean Students Association<br>
+			<span class="subtitle">at Carnegie Mellon University</span></h1>
+		<p>
+			The Carnegie Mellon University Singapore Students Association (CMUSSA) is a 
+			student organization representing all Singaporean students at Carnegie Mellon
+			University in Pittsburgh, Pennsylvania. We aim to showcase Singaporean culture and
+			provide a social space and support network for Singaporean students.
+
+			If you are an admitted student and wish to join our Telegram group, email us at 
+			<a href="mailto:ssa@andrew.cmu.edu">ssa@andrew.cmu.edu</a> or DM us on Instagram at 
+			<a href="https://www.instagram.com/cmu.ssa/">@cmu.ssa</a>!
+		</p>
+		
+		<hr>
+
+		<h2>Upcoming Events</h2>
+		<h3>First-Year Webinar</h3>
+		<p>
+			We will be hosting our annual webinar for incoming first-year students to share 
+			more about our experiences at CMU and answer any questions you may have.
+		</p>
+		<p>
+			<b>Time (SGT):</b> 10am, 9 June 2024<br>
+			<b>Time (EDT):</b> 10pm, 8 June 2024<br>
+			<b>Location:</b> Virtual
+		</p>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: rgba(0, 0, 0, 0.8);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	a {
+		color: darkslateblue;
+		text-decoration: none;
+	}
+	.subtitle {
+		font-size: 2rem;
+		font-weight: 650;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>
